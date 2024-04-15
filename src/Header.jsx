@@ -16,7 +16,11 @@ export function Header({ isLoggedIn }) {
             <Link to="/account" className="btn btn-secondary mx-2">Your Account</Link>
           </>
         ) : (
-          <Link to="/createUser" className="btn btn-danger">Create User</Link>
+          <div>
+            <Link to="/createUser" className="btn btn-danger">Create User</Link>
+            <Link to="/SignIn" className="btn btn-danger">Sign In</Link>
+          </div>
+
         )}
       </div>
     </header>

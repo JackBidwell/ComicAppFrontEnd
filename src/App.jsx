@@ -1,7 +1,10 @@
 import React from 'react';
-import ComicList from "./comicList"; // Ensure the file name matches exactly
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './Header';
+import ComicList from "./comicList";
+import CreateUser from './createUser';
+import SignIn from "./SignIn";
+
 
 function App() {
   return (
@@ -10,6 +13,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<ComicList />} />
+          <Route path="/CreateUser" element={<CreateUser />} />
+          <Route path="/SignIn" element={<SignIn />} />
         </Routes>
       </div>
     </Router>
